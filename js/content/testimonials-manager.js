@@ -72,9 +72,13 @@ function createTestimonialsSection() {
                             <!-- Testimonials will be inserted here -->
                         </div>
                         <div class="testimonials-navigation">
-                            <button class="testimonials-prev" aria-label="Previous testimonial">&larr;</button>
+                            <button class="testimonials-prev" aria-label="Previous testimonial">
+                                <img src="images/icons/arrow-left.svg" alt="Previous" class="arrow-icon">
+                            </button>
                             <div class="testimonials-dots"></div>
-                            <button class="testimonials-next" aria-label="Next testimonial">&rarr;</button>
+                            <button class="testimonials-next" aria-label="Next testimonial">
+                                <img src="images/icons/arrow-right.svg" alt="Next" class="arrow-icon">
+                            </button>
                         </div>
                     </div>
                 </div>

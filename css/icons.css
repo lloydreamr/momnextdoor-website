@@ -1,0 +1,108 @@
+/* Custom Icon System */
+.custom-icon {
+    width: 1.25em;
+    height: 1.25em;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+/* Icon Sizes */
+.icon-xs { width: 0.75em; height: 0.75em; }
+.icon-sm { width: 1em; height: 1em; }
+.icon-md { width: 1.5em; height: 1.5em; }
+.icon-lg { width: 2em; height: 2em; }
+.icon-xl { width: 3em; height: 3em; }
+
+/* Icon Container Classes */
+.btn-icon,
+.info-icon,
+.profile-icon,
+.credential-icon,
+.pillar-icon,
+.service-icon,
+.guarantee-icon,
+.phone-icon,
+.form-icon,
+.cta-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Specific Icon Styling */
+.btn-icon .custom-icon {
+    margin-right: 0.5rem;
+}
+
+.info-icon .custom-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.credential-icon .custom-icon,
+.pillar-icon .custom-icon,
+.service-icon .custom-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.guarantee-icon .custom-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #28a745;
+}
+
+/* Hover Effects */
+.custom-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Arrow Icons for Testimonials */
+.arrow-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow-icon:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+.testimonials-prev,
+.testimonials-next {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Color Variants - Can override SVG fills */
+.icon-primary { fill: #4A90E2 !important; }
+.icon-success { fill: #2ECC71 !important; }
+.icon-warning { fill: #F39C12 !important; }
+.icon-danger { fill: #E74C3C !important; }
+.icon-info { fill: #3498DB !important; }
+.icon-light { fill: #ECF0F1 !important; }
+.icon-dark { fill: #34495E !important; }
+.icon-pink { fill: #E91E63 !important; }
+.icon-purple { fill: #9B59B6 !important; }
+.icon-teal { fill: #16A085 !important; }
+
+/* Icon Color Themes */
+.icon-theme-healthcare .custom-icon { fill: #4A90E2; }
+.icon-theme-warmth .custom-icon { fill: #E91E63; }
+.icon-theme-nature .custom-icon { fill: #2ECC71; }
+.icon-theme-trust .custom-icon { fill: #3498DB; }
+
+/* Specific Icon Context Colors */
+.hero .custom-icon,
+.cta-buttons .custom-icon { fill: #FFFFFF; }
+.service-card:hover .custom-icon { filter: brightness(1.3); }
+.guarantee-icon .custom-icon { fill: #27AE60 !important; }
