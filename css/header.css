@@ -37,19 +37,19 @@
 }
 
 .phone-label {
-    font-size: 0.85rem;
+    font-size: var(--font-size-sm);
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 0.25rem;
 }
 
 .phone-number {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--white);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-white);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .phone-number:hover {
-    color: var(--secondary-warm);
+    color: var(--primary-green-pale);
 }
