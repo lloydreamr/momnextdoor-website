@@ -69,20 +69,7 @@
     margin-top: 2px;
 }
 
-.btn-secondary {
-    background-color: rgba(255, 255, 255, 0.95);
-    color: var(--primary-green-dark);
-    border-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-}
-
-.btn-secondary:hover {
-    background-color: var(--text-white);
-    color: var(--primary-green);
-    border-color: var(--text-white);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
+/* Removed duplicate - see line 142 for active styles */
 
 /* Phone CTA */
 .phone-cta {
@@ -143,9 +130,9 @@
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-sm);
-    background: rgba(45, 139, 79, 0.1);
+    background: rgba(255, 255, 255, 0.95);
     color: var(--primary-green-dark);
-    border: 2px solid var(--primary-green);
+    border: 2px solid rgba(255, 255, 255, 0.95);
     text-decoration: none;
     padding: var(--spacing-md) var(--spacing-lg);
     border-radius: 50px;
@@ -153,11 +140,13 @@
     font-weight: 600;
     transition: all 0.3s ease;
     cursor: pointer;
+    backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
     background: var(--primary-green);
     color: var(--text-white);
+    border-color: var(--primary-green);
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(45, 139, 79, 0.3);
 }
