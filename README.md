@@ -38,7 +38,40 @@ A mobile-optimized website for MomNextDoor, providing trusted special needs care
 
 ## Live Demo
 
-Visit the live site: [URL will be added after deployment]
+**🌐 Live Site**: https://lloydreamr.github.io/momnextdoor-website/
+
+## Development Workflow
+
+### Making Updates
+```bash
+# 1. Make changes to files (index.html, styles.css, script.js)
+# 2. Commit and push (automatic deployment)
+git add .
+git commit -m "Description of changes"
+git push origin main
+```
+
+### Local Development
+```bash
+# Run local server
+python3 -m http.server 8000
+# View at: localhost:8000
+```
+
+## Current Status (Sept 2024)
+
+✅ **Mobile header optimization complete** - 50% viewport space saved
+✅ **Green brand-consistent design implemented**
+✅ **Performance optimized** - Background images removed
+✅ **Scroll effects added** for engagement
+✅ **GitHub Pages deployment automated**
+
+### Next Potential Improvements
+- [ ] Add contact form
+- [ ] Implement service booking system
+- [ ] Add testimonials section
+- [ ] SEO optimization
+- [ ] Analytics integration
 
 ---
 
