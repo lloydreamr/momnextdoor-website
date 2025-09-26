@@ -5,6 +5,10 @@ import { initAccessibility } from './accessibility.js';
 import { initAnalytics } from './analytics.js';
 import { initScrollEffects, initParallax } from './animations.js';
 import { initDynamicStyles } from './styles.js';
+import { initSEO } from './content/seo-manager.js';
+import { initContentManager } from './content/content-manager.js';
+import { initTestimonials } from './content/testimonials-manager.js';
+import { initFAQ } from './content/faq-manager.js';
 
 /**
  * Main application initialization
@@ -14,6 +18,10 @@ import { initDynamicStyles } from './styles.js';
 
     // Initialize when DOM is loaded
     document.addEventListener('DOMContentLoaded', function() {
+        initSEO();
+        initContentManager();
+        initTestimonials();
+        initFAQ();
         initClickToCall();
         initBusinessHours();
         initAccessibility();

@@ -1,0 +1,16 @@
+schema: 1
+story: 'STORY-001'
+gate: CONCERNS
+status_reason: 'Implementation complete but testing validation incomplete - all test checklist items remain unchecked.'
+reviewer: 'Quinn'
+updated: '2025-09-25T08:00:00Z'
+top_issues:
+  - id: 'TEST-001'
+    severity: medium
+    finding: 'All testing checklist items unchecked (structured data validation, meta tag testing, performance benchmarks, compatibility testing)'
+    suggested_action: 'Complete testing checklist items and document results before final approval'
+  - id: 'DOC-001'
+    severity: low
+    finding: 'Missing QA Results section in story file'
+    suggested_action: 'Add QA Results section to track quality assessment'
+waiver: { active: false }
