@@ -5,37 +5,8 @@ import { formatTime } from './utils.js';
  * Business hours indicator
  */
 export function initBusinessHours() {
-    const now = new Date();
-    const currentHour = now.getHours();
-    const currentDay = now.getDay();
-
-    const isBusinessHours = CONFIG.businessHours.days.includes(currentDay) &&
-                           currentHour >= CONFIG.businessHours.start &&
-                           currentHour < CONFIG.businessHours.end;
-
-    // Add status indicator to phone displays
-    const phoneDisplays = document.querySelectorAll('.phone-display, .contact-main');
-
-    phoneDisplays.forEach(function(display) {
-        const statusElement = document.createElement('div');
-        statusElement.className = 'hours-status';
-
-        if (isBusinessHours) {
-            statusElement.innerHTML = '<span class="status-open">🟢 Currently Available</span>';
-            statusElement.className += ' status-open';
-        } else {
-            statusElement.innerHTML = '<span class="status-closed">🔴 Currently Closed</span>';
-            statusElement.className += ' status-closed';
-
-            // Add next available time
-            const nextAvailable = getNextAvailableTime();
-            if (nextAvailable) {
-                statusElement.innerHTML += `<br><small>Available: ${nextAvailable}</small>`;
-            }
-        }
-
-        display.appendChild(statusElement);
-    });
+    // 24/7 availability - no need for status indicators
+    // Function kept for compatibility but no longer adds status elements
 }
 
 /**

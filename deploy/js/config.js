@@ -2,9 +2,9 @@
 export const CONFIG = {
     phoneNumber: '7809041463',
     businessHours: {
-        start: 8, // 8 AM
-        end: 20,  // 8 PM
-        days: [2, 3, 4, 5, 6, 0] // Tuesday through Sunday (0 = Sunday)
+        start: 0, // 24/7 service
+        end: 24,  // 24/7 service
+        days: [0, 1, 2, 3, 4, 5, 6] // All 7 days of the week
     },
     seo: {
         enabled: true,

@@ -1,22 +1,53 @@
 /* CSS Custom Properties / Variables */
 :root {
-    /* Green color palette matching MOM RESPITE CARE branding */
-    --primary-green: #2d8b4f;
-    --primary-green-light: #4fa66e;
-    --primary-green-dark: #1f5f37;
-    --secondary-warm: #f8fdf9;
-    --accent-blue: #27aaff;
-    --accent-orange: #e28d73;
-    --text-dark: #333333;
-    --text-medium: #666666;
-    --text-light: #888888;
-    --white: #ffffff;
-    --border-light: #e0e0e0;
+    /* Professional Green Color Palette - Matching MomNextDoor Logo */
+    --primary-green: #5A7A4A;        /* Main logo green - professional sage (AA compliant) */
+    --primary-green-light: #8BA776;   /* Lighter variant for backgrounds */
+    --primary-green-dark: #4A6B3A;    /* Darker variant for text/accents */
+    --primary-green-pale: #F4F7F2;    /* Very light green for subtle backgrounds */
 
-    /* Typography - Kid-friendly fonts */
-    --font-primary: 'Comic Neue', 'Fredoka One', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-size-base: 16px;
-    --line-height-base: 1.6;
+    /* Professional Supporting Colors */
+    --secondary-teal: #5A8E7B;        /* Professional teal complement */
+    --accent-gold: #B8956B;           /* Warm professional accent */
+    --neutral-warm: #F8F9F7;          /* Warm white background */
+
+    /* Professional Text Colors */
+    --text-primary: #2C3E2D;          /* Dark green-tinted text */
+    --text-secondary: #4A5D4B;        /* Medium green-tinted text */
+    --text-muted: #6B7A6C;            /* Light green-tinted text */
+    --text-white: #FFFFFF;            /* Pure white for contrast */
+
+    /* Professional UI Colors */
+    --border-subtle: #D4E0D1;         /* Subtle green-tinted border */
+    --border-standard: #B8C9B4;       /* Standard border color */
+    --background-card: #FFFFFF;       /* Card backgrounds */
+    --background-section: #F9FBF8;    /* Section backgrounds */
+
+    /* Professional Typography System */
+    --font-primary: 'Inter', 'Segoe UI', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-secondary: 'Source Serif Pro', 'Georgia', serif;
+
+    /* Typography Scale - Professional Hierarchy */
+    --font-size-xs: 0.75rem;     /* 12px - fine print */
+    --font-size-sm: 0.875rem;    /* 14px - captions, labels */
+    --font-size-base: 1rem;      /* 16px - body text */
+    --font-size-lg: 1.125rem;    /* 18px - large body text */
+    --font-size-xl: 1.25rem;     /* 20px - small headings */
+    --font-size-2xl: 1.5rem;     /* 24px - medium headings */
+    --font-size-3xl: 1.875rem;   /* 30px - large headings */
+    --font-size-4xl: 2.25rem;    /* 36px - hero headings */
+    --font-size-5xl: 3rem;       /* 48px - display headings */
+
+    /* Professional Line Heights */
+    --line-height-tight: 1.25;   /* Headings */
+    --line-height-base: 1.5;     /* Body text */
+    --line-height-relaxed: 1.75; /* Large text blocks */
+
+    /* Professional Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 
     /* Spacing */
     --spacing-xs: 0.5rem;

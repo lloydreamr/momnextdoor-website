@@ -1,0 +1,195 @@
+/* Snappy Micro-Animations */
+:root {
+    /* Animation Durations - Faster, snappier */
+    --animation-fast: 150ms;
+    --animation-base: 200ms;
+    --animation-slow: 300ms;
+
+    /* Easing Functions */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Button Micro-Animations */
+.btn,
+.btn-primary,
+.btn-secondary,
+.service-btn,
+.about-cta-btn,
+.phone-cta {
+    transition: all var(--animation-fast) var(--ease-out-quint);
+    transform-origin: center;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.btn:active,
+.btn-primary:active,
+.btn-secondary:active {
+    transform: translateY(0) scale(0.98);
+    transition-duration: 50ms;
+}
+
+/* Card Hover Animations */
+.service-card,
+.info-card,
+.credential-item,
+.pillar,
+.testimonial-card,
+.faq-item {
+    transition: transform var(--animation-base) var(--ease-out-expo),
+                box-shadow var(--animation-base) var(--ease-out-expo);
+}
+
+.service-card:hover,
+.info-card:hover,
+.credential-item:hover,
+.pillar:hover {
+    transform: translateY(-4px);
+}
+
+/* Link Micro-Animations */
+a {
+    transition: color var(--animation-fast) var(--ease-out-quint);
+}
+
+/* Form Input Animations */
+input,
+textarea,
+select {
+    transition: border-color var(--animation-fast) var(--ease-out-quint),
+                box-shadow var(--animation-fast) var(--ease-out-quint);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    transition-duration: 100ms;
+}
+
+/* FAQ Accordion - Snappier */
+.faq-answer {
+    transition: max-height var(--animation-base) var(--ease-out-expo),
+                opacity var(--animation-fast) var(--ease-out-quint);
+}
+
+.faq-question::after {
+    transition: transform var(--animation-fast) var(--ease-spring);
+}
+
+/* Testimonial Animations - Faster */
+.testimonial-track {
+    transition: transform var(--animation-slow) var(--ease-out-quint);
+}
+
+.testimonial-card {
+    transition: opacity var(--animation-base) var(--ease-out-quint),
+                transform var(--animation-base) var(--ease-out-expo);
+}
+
+/* Navigation Dots */
+.testimonial-dot {
+    transition: all var(--animation-fast) var(--ease-out-quint);
+}
+
+/* Badge Pulse - Subtler and Faster */
+@keyframes subtlePulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 0.95;
+    }
+}
+
+.hero-badge {
+    animation: subtlePulse 3s var(--ease-in-out-quart) infinite;
+}
+
+/* Scroll Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity var(--animation-base) var(--ease-out-quint),
+                transform var(--animation-base) var(--ease-out-expo);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Phone Number Hover */
+.phone-number,
+.phone-cta {
+    position: relative;
+    transition: transform var(--animation-fast) var(--ease-spring);
+}
+
+.phone-number:hover,
+.phone-cta:hover {
+    transform: scale(1.05);
+}
+
+/* Icon Bounce on Hover */
+.service-icon,
+.info-icon,
+.credential-icon,
+.pillar-icon {
+    transition: transform var(--animation-fast) var(--ease-spring);
+}
+
+.service-card:hover .service-icon,
+.info-card:hover .info-icon,
+.credential-item:hover .credential-icon,
+.pillar:hover .pillar-icon {
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* Smooth Color Transitions */
+.hours-status,
+.status-open,
+.status-closed {
+    transition: opacity var(--animation-fast) var(--ease-out-quint);
+}
+
+/* Loading States */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.loading {
+    background: linear-gradient(
+        90deg,
+        #f0f0f0 25%,
+        #f8f8f8 50%,
+        #f0f0f0 75%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

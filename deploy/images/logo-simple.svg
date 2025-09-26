@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5A7A4A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A6B3A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Icon: Simple, clean house with heart -->
+  <g id="logoMark">
+    <!-- House shape with integrated heart -->
+    <path d="M 25 30 L 25 18 L 30 13 L 40 23 L 50 13 L 55 18 L 55 30 L 55 38 L 45 38 L 45 28 L 35 28 L 35 38 L 25 38 Z"
+          fill="url(#brandGradient)"/>
+
+    <!-- Heart cutout in center -->
+    <path d="M 36 24 C 36 22, 37.5 20.5, 40 20.5 C 42.5 20.5, 44 22, 44 24 C 44 26.5, 42 28.5, 40 31 C 38 28.5, 36 26.5, 36 24 Z"
+          fill="white"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark">
+    <!-- "Mom" -->
+    <text x="70" y="35" font-family="Inter, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#5A7A4A">
+      Mom
+    </text>
+
+    <!-- "NextDoor" -->
+    <text x="122" y="35" font-family="Inter, -apple-system, sans-serif" font-size="24" font-weight="400" fill="#5A7A4A">
+      NextDoor
+    </text>
+
+    <!-- Tagline -->
+    <text x="70" y="48" font-family="Inter, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#6B7A6C" letter-spacing="1">
+      TRUSTED SPECIAL NEEDS CARE
+    </text>
+  </g>
+</svg>

@@ -3,9 +3,12 @@
 
 @import './variables.css';
 @import './base.css';
+@import './animations.css';
 @import './header.css';
+@import './header-redesign.css';
 @import './components.css';
 @import './sections.css';
 @import './testimonials.css';
 @import './faq.css';
+@import './footer-redesign.css';
 @import './responsive.css';
