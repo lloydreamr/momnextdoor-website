@@ -1,0 +1,93 @@
+{
+  "items": [
+    {
+      "id": "faq-1",
+      "question": "What age range do you provide care for?",
+      "answer": "I provide care for children and teens with special needs of all ages, from toddlers to young adults. Each child is unique, and I adapt my approach to meet their individual needs and developmental level, whether they require basic assistance or more complex care management.",
+      "category": "Services",
+      "priority": 1
+    },
+    {
+      "id": "faq-2",
+      "question": "Do you have experience with autism spectrum disorders?",
+      "answer": "Yes, I have extensive experience caring for children on the autism spectrum. As a parent myself, I understand the importance of routine, clear communication, and creating a calm, predictable environment. I'm familiar with sensory needs, communication methods, and behavioral support strategies.",
+      "category": "Experience",
+      "priority": 1
+    },
+    {
+      "id": "faq-3",
+      "question": "What areas of Edmonton do you serve?",
+      "answer": "I provide services throughout Edmonton and surrounding areas including St. Albert, Sherwood Park, Spruce Grove, and other nearby communities. Travel time is included in my planning. Contact me at 780-904-1463 to discuss your specific location and scheduling needs.",
+      "category": "Service Area",
+      "priority": 1
+    },
+    {
+      "id": "faq-4",
+      "question": "What are your hours of operation?",
+      "answer": "I'm available Tuesday through Sunday, 8am to 8pm. I understand that special needs families sometimes need flexibility for appointments, emergencies, or respite care. Please don't hesitate to discuss your specific scheduling needs - I'll do my best to accommodate.",
+      "category": "Availability",
+      "priority": 1
+    },
+    {
+      "id": "faq-5",
+      "question": "Do you provide emergency respite care?",
+      "answer": "Yes, I understand that families sometimes face unexpected situations requiring immediate care. While I can't guarantee immediate availability, I prioritize emergency requests and maintain a network of trusted backup caregivers when possible. Please call 780-904-1463 for urgent needs.",
+      "category": "Emergency Care",
+      "priority": 1
+    },
+    {
+      "id": "faq-6",
+      "question": "What qualifications and training do you have?",
+      "answer": "As a parent of a child with special needs, I bring personal understanding combined with professional training. I maintain current First Aid and CPR certifications, have completed specialized training in disability support, and continuously update my knowledge through workshops and courses.",
+      "category": "Qualifications",
+      "priority": 2
+    },
+    {
+      "id": "faq-7",
+      "question": "How do you handle challenging behaviors?",
+      "answer": "I use positive behavior support strategies, focusing on understanding the underlying needs behind behaviors. I work closely with families to understand existing strategies and maintain consistency. My approach emphasizes patience, clear communication, and creating a calm, supportive environment.",
+      "category": "Behavior Support",
+      "priority": 2
+    },
+    {
+      "id": "faq-8",
+      "question": "Can you provide overnight care?",
+      "answer": "Yes, I offer overnight respite care for families who need extended support. This service requires advance planning to ensure proper preparation and coordination. Overnight care allows parents to have longer breaks while their child remains in familiar, caring hands.",
+      "category": "Extended Care",
+      "priority": 2
+    },
+    {
+      "id": "faq-9",
+      "question": "Do you work with children who have medical needs?",
+      "answer": "I can provide care for children with certain medical needs, depending on the complexity and my training level. I'm comfortable with basic medical care, medication reminders, and monitoring. For complex medical needs, I work closely with families and healthcare providers to ensure safe, appropriate care.",
+      "category": "Medical Care",
+      "priority": 2
+    },
+    {
+      "id": "faq-10",
+      "question": "How far in advance should I book services?",
+      "answer": "For regular, ongoing care, I recommend booking 1-2 weeks in advance to ensure availability. For special events or one-time care, as much notice as possible is appreciated. However, I understand that special needs families sometimes need flexibility, and I'll do my best to accommodate shorter-notice requests.",
+      "category": "Booking",
+      "priority": 2
+    },
+    {
+      "id": "faq-11",
+      "question": "What information do you need about my child?",
+      "answer": "Before providing care, I'll need information about your child's specific needs, routines, preferences, communication methods, any medical considerations, emergency contacts, and behavioral strategies that work best. I prefer to meet with families beforehand to discuss these details and ensure the best possible care.",
+      "category": "Intake Process",
+      "priority": 2
+    },
+    {
+      "id": "faq-12",
+      "question": "Are you available for regular weekly care?",
+      "answer": "Yes, I offer regular weekly care arrangements for families who need ongoing support. This can include after-school care, weekend respite, or other scheduled times. Regular arrangements help build consistency and comfort for both children and families. Contact me to discuss your specific needs and availability.",
+      "category": "Regular Care",
+      "priority": 2
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2024-09-25",
+    "totalCount": 12,
+    "categories": ["Services", "Experience", "Service Area", "Availability", "Emergency Care", "Qualifications", "Behavior Support", "Extended Care", "Medical Care", "Booking", "Intake Process", "Regular Care"]
+  }
+}

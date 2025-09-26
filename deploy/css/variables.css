@@ -1,0 +1,30 @@
+/* CSS Custom Properties / Variables */
+:root {
+    /* Green color palette matching MOM RESPITE CARE branding */
+    --primary-green: #2d8b4f;
+    --primary-green-light: #4fa66e;
+    --primary-green-dark: #1f5f37;
+    --secondary-warm: #f8fdf9;
+    --accent-blue: #27aaff;
+    --accent-orange: #e28d73;
+    --text-dark: #333333;
+    --text-medium: #666666;
+    --text-light: #888888;
+    --white: #ffffff;
+    --border-light: #e0e0e0;
+
+    /* Typography - Kid-friendly fonts */
+    --font-primary: 'Comic Neue', 'Fredoka One', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.6;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Responsive breakpoints */
+    --mobile-breakpoint: 768px;
+}

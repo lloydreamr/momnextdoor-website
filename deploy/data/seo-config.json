@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "MomNextDoor - Special Needs Caregiving in Edmonton | Professional Respite Care",
+    "description": "Trusted special needs caregiving in Edmonton. Parent-to-parent understanding with professional respite care services. Contact Domina at 780-904-1463.",
+    "keywords": "special needs care Edmonton, respite care Edmonton, special needs caregiver, autism care Edmonton, disability care Edmonton, special needs babysitter, professional childcare, trusted caregiver Edmonton",
+    "author": "Domina Jarina - MomNextDoor",
+    "robots": "index, follow"
+  },
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MomNextDoor Special Needs Care",
+    "description": "Professional special needs caregiving services in Edmonton providing respite care with parent-to-parent understanding.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Edmonton",
+      "addressRegion": "Alberta",
+      "addressCountry": "Canada"
+    },
+    "telephone": "780-904-1463",
+    "priceRange": "$$",
+    "openingHours": [
+      "Tu-Su 08:00-20:00"
+    ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.5461,
+        "longitude": -113.4938
+      },
+      "geoRadius": "50000"
+    },
+    "areaServed": "Edmonton, Alberta",
+    "hasOfferingCatalog": {
+      "@type": "OfferingCatalog",
+      "name": "Special Needs Care Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Special Needs Respite Care",
+            "description": "Professional respite care for families with special needs children"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Autism Spectrum Support",
+            "description": "Specialized care for children on the autism spectrum"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Disability Care Support",
+            "description": "Compassionate care for children with various disabilities"
+          }
+        }
+      ]
+    }
+  },
+  "localSEO": {
+    "businessName": "MomNextDoor Special Needs Care",
+    "ownerName": "Domina Jarina",
+    "city": "Edmonton",
+    "province": "Alberta",
+    "country": "Canada",
+    "serviceKeywords": [
+      "special needs care",
+      "respite care",
+      "autism care",
+      "disability support",
+      "professional childcare",
+      "trusted caregiver"
+    ]
+  }
+}

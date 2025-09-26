@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "name": "Sarah M.",
+      "content": "Domina has been absolutely incredible with our son Jake who has autism. She understands his needs and routine in a way that gives us peace of mind when we need respite care.",
+      "location": "Edmonton, AB",
+      "rating": 5,
+      "date": "2024-08-15",
+      "image": null
+    },
+    {
+      "name": "Michael & Lisa T.",
+      "content": "Having someone who truly gets what we go through as special needs parents has been life-changing. Domina's care and understanding are exceptional.",
+      "location": "St. Albert, AB",
+      "rating": 5,
+      "date": "2024-07-22",
+      "image": null
+    },
+    {
+      "name": "Jennifer K.",
+      "content": "As a single parent of a child with special needs, finding trustworthy care is so difficult. Domina not only provides excellent care but does it with genuine compassion and understanding.",
+      "location": "Sherwood Park, AB",
+      "rating": 5,
+      "date": "2024-06-10",
+      "image": null
+    },
+    {
+      "name": "David & Emma R.",
+      "content": "Domina's parent-to-parent approach makes all the difference. She gets it in a way that other caregivers just don't. Our daughter is always happy and well-cared for.",
+      "location": "Edmonton, AB",
+      "rating": 5,
+      "date": "2024-09-01",
+      "image": null
+    },
+    {
+      "name": "Maria C.",
+      "content": "Professional, caring, and incredibly reliable. Domina has given our family the respite we desperately needed while ensuring our son receives the specialized attention he requires.",
+      "location": "Spruce Grove, AB",
+      "rating": 5,
+      "date": "2024-07-30",
+      "image": null
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2024-09-25",
+    "totalCount": 5,
+    "averageRating": 5.0
+  }
+}
