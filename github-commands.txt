@@ -1,0 +1,19 @@
+After creating your GitHub repository, run these commands:
+
+cd /Users/maho/Documents/code/clients/momnextdoor/deploy
+
+# Replace YOUR-USERNAME with your actual GitHub username
+git remote add origin https://github.com/YOUR-USERNAME/momnextdoor-website.git
+
+git branch -M main
+git push -u origin main
+
+# Then enable GitHub Pages:
+# 1. Go to your repo Settings tab
+# 2. Scroll to "Pages" section
+# 3. Source: Deploy from a branch
+# 4. Branch: main / (root)
+# 5. Save
+
+Your site will be live at:
+https://YOUR-USERNAME.github.io/momnextdoor-website/
