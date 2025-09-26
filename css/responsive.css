@@ -1,0 +1,144 @@
+/* Responsive Styles and Media Queries */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-xs);
+        text-align: left;
+    }
+
+    .logo {
+        height: 40px;
+        max-width: 120px;
+    }
+
+    .phone-display {
+        align-items: flex-end;
+    }
+
+    .phone-label {
+        display: none;
+    }
+
+    .phone-number {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .business-info {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-md);
+    }
+
+    .trust-points {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .service-path {
+        padding: var(--spacing-lg);
+    }
+
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .phone-cta {
+        font-size: 1.3rem;
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .header {
+        padding: calc(var(--spacing-xs) * 0.8) 0;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .trust-section h3,
+    .services-section h3,
+    .contact-content h3 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    .trust-point h4 {
+        font-size: 1.1rem;
+    }
+
+    .trust-point p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .trust-point,
+    .service-path {
+        padding: var(--spacing-md);
+    }
+
+    .contact-details {
+        padding: var(--spacing-lg);
+    }
+
+    .phone-cta {
+        font-size: 1.1rem;
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+}
+
+/* Accessibility enhancements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-green: #006400;
+        --primary-green-dark: #004000;
+        --text-medium: #000000;
+    }
+}

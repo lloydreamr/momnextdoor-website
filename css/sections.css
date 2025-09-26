@@ -1,0 +1,86 @@
+/* Section Styles */
+
+/* Hero section */
+.hero {
+    background-color: var(--primary-green-light);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.4;
+}
+
+/* Trust Section */
+.trust-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--white), var(--secondary-warm));
+}
+
+.trust-content h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Services Section */
+.services-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--secondary-warm);
+}
+
+.services-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--secondary-warm), var(--primary-green-light));
+}
+
+.contact-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h3 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-content > p {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--text-dark);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+}

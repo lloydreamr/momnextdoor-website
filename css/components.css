@@ -1,0 +1,205 @@
+/* Component Styles */
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    min-width: 180px;
+    text-align: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border-color: var(--primary-green);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-green-dark);
+    border-color: var(--primary-green-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--primary-green-dark);
+    border-color: var(--primary-green);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Phone CTA */
+.phone-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-decoration: none;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.phone-cta:hover {
+    background-color: var(--primary-green-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.phone-icon {
+    font-size: 1.2rem;
+}
+
+/* Business Info */
+.business-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--secondary-warm), var(--white));
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(45, 139, 79, 0.1);
+    border: 1px solid rgba(45, 139, 79, 0.1);
+}
+
+.info-item {
+    text-align: center;
+    color: var(--text-medium);
+}
+
+.info-item strong {
+    color: var(--primary-green-dark);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* Trust Points */
+.trust-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.trust-point {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--white), rgba(248, 253, 249, 0.8));
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(45, 139, 79, 0.1);
+    box-shadow: 0 4px 20px rgba(45, 139, 79, 0.08);
+}
+
+.trust-point:hover {
+    transform: translateY(-5px);
+}
+
+.trust-point h4 {
+    color: var(--primary-green-dark);
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.trust-point p {
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.service-path {
+    background-color: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-path:hover {
+    transform: translateY(-8px);
+}
+
+.service-path h4 {
+    color: var(--primary-green-dark);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.service-path p {
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+/* Contact Details */
+.contact-details {
+    background: linear-gradient(135deg, var(--white), rgba(248, 253, 249, 0.8));
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    margin-top: var(--spacing-lg);
+    box-shadow: 0 6px 25px rgba(45, 139, 79, 0.12);
+    border: 1px solid rgba(45, 139, 79, 0.1);
+}
+
+.contact-main {
+    margin-bottom: var(--spacing-xl);
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.contact-item {
+    color: var(--text-medium);
+    line-height: 1.5;
+}
+
+.contact-item strong {
+    color: var(--primary-green-dark);
+}
+
+/* Focus styles for keyboard navigation */
+.btn:focus,
+.phone-number:focus,
+.phone-cta:focus {
+    outline: 3px solid var(--accent-blue);
+    outline-offset: 2px;
+}
