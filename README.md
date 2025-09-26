@@ -1,77 +1,121 @@
-# MomNextDoor - Special Needs Caregiving Website
+# MomNextDoor - Professional Cleaning Services
 
-A mobile-optimized website for MomNextDoor, providing trusted special needs caregiving services in Edmonton.
+A modern, responsive website for MomNextDoor professional cleaning services with an integrated online booking system.
 
-## Features
+## 🚀 Features
 
-- **Mobile-First Design**: Optimized header layout saving 50% mobile viewport space
-- **Accessibility Focused**: Screen reader friendly, keyboard navigation, high contrast support
-- **Performance Optimized**: Clean gradient-based design, no heavy background images
-- **Interactive Elements**: Smooth scroll animations and micro-interactions
-- **Parent-to-Parent Focus**: Authentic messaging for special needs families
-- **Modular Architecture**: Clean separation of concerns with ES6 modules
+- **Online Booking System**: Real-time availability checking and appointment scheduling
+- **Mobile-First Design**: Fully responsive across all devices
+- **Professional Services**: House cleaning, deep cleaning, move-in/out, office cleaning
+- **Accessibility Focused**: WCAG 2.1 compliant for all users
+- **Performance Optimized**: Fast loading with optimized assets
+- **SEO Optimized**: Structured data and semantic HTML for search visibility
+- **Contact Forms**: Validated forms with email notifications
+- **Business Hours**: Dynamic display with timezone support
 
-## Recent Refactoring (September 2025)
+## 🛠 Local Development
 
-### Code Organization
-- **JavaScript**: Split into 9 ES6 modules for maintainability
-- **CSS**: Organized into 7 component-based stylesheets
-- **Documentation**: Sharded into focused topic files
-- **File Structure**: Clean separation with `js/` and `css/` folders
+### Prerequisites
+- Node.js (v14+)
+- npm or yarn
+- Git
 
-### Performance & Maintainability
-- Modular imports for better code organization
-- Component-based CSS architecture
-- ES6 module system for JavaScript
-- Comprehensive documentation structure
+### Setup Instructions
 
-## Technologies Used
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/momnextdoor.git
+cd momnextdoor
+```
 
+2. **Backend Setup**
+```bash
+cd backend
+npm install
+npm start  # Runs on http://localhost:3000
+```
+
+3. **Frontend Setup** (new terminal)
+```bash
+python3 -m http.server 8081
+# Access at http://localhost:8081
+```
+
+## 💻 Technologies Used
+
+**Frontend:**
 - HTML5 with semantic markup
-- CSS3 with CSS Custom Properties (modular architecture)
-- ES6 JavaScript modules with modern syntax
-- Mobile-first responsive design
+- CSS3 with modern features (Grid, Flexbox, Custom Properties)
+- Vanilla JavaScript (ES6+ modules)
+- Responsive design with mobile-first approach
 
-## Live Demo
+**Backend:**
+- Node.js & Express.js
+- PostgreSQL (optional, in-memory for demo)
+- RESTful API architecture
+- JWT authentication (optional)
 
-**🌐 Live Site**: https://lloydreamr.github.io/momnextdoor-website/
+## 🌐 Deployment
 
-## Development Workflow
+### GitHub Pages (Frontend)
+**Live Site**: https://yourusername.github.io/momnextdoor/
 
-### Making Updates
+Automatically deployed via GitHub Actions on push to main branch.
+
+### Backend Options
+- **Heroku**: With Postgres addon
+- **Render**: Free tier available
+- **Railway**: One-click deploy
+- **Vercel**: Serverless functions
+
+## 🧪 Testing
+
 ```bash
-# 1. Make changes to files (index.html, css/, js/)
-# 2. Test locally: python3 -m http.server 8080
-# 3. Commit and push (automatic deployment)
-git add .
-git commit -m "Description of changes"
-git push origin main
+cd backend
+npm test  # Run test suite
 ```
 
-### Local Development
-```bash
-# Run local server
-python3 -m http.server 8000
-# View at: localhost:8000
+**Test Coverage:**
+- API endpoint tests
+- Form validation tests
+- Availability checking tests
+- UI component tests
+
+## 📁 Project Structure
+
+```
+momnextdoor/
+├── backend/              # Node.js backend API
+│   ├── routes/          # API routes
+│   ├── services/        # Business logic
+│   ├── __tests__/       # Test files
+│   └── server.js        # Express server
+├── css/                 # Stylesheets
+├── js/                  # Frontend JavaScript
+│   ├── booking/         # Booking system
+│   ├── core/           # Core utilities
+│   └── features/       # Feature modules
+├── images/             # Images and icons
+├── pages/              # Additional pages
+└── index.html         # Main landing page
 ```
 
-## Current Status (Sept 2024)
+## 🤝 Contributing
 
-✅ **Mobile header optimization complete** - 50% viewport space saved
-✅ **Green brand-consistent design implemented**
-✅ **Performance optimized** - Background images removed
-✅ **Scroll effects added** for engagement
-✅ **GitHub Pages deployment automated**
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/NewFeature`)
+3. Commit changes (`git commit -m 'Add NewFeature'`)
+4. Push to branch (`git push origin feature/NewFeature`)
+5. Open Pull Request
 
-### Next Potential Improvements
-- [ ] Add contact form
-- [ ] Implement service booking system
-- [ ] Add testimonials section
-- [ ] SEO optimization
-- [ ] Analytics integration
+## 📞 Contact
+
+**MomNextDoor Professional Cleaning**
+- 📱 Phone: (555) 123-4567
+- 📧 Email: contact@momnextdoor.com
+- 🌐 Website: https://momnextdoor.com
+- 📍 Service Area: Greater Metropolitan Area
 
 ---
 
-**Contact**: MomNextDoor - Special Needs Care
-**Phone**: 780-904-1463
-**Service Area**: Edmonton & Surrounding Areas
+Built with ❤️ for MomNextDoor

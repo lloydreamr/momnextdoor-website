@@ -1,10 +1,18 @@
 // MomNextDoor Website Main JavaScript Entry Point
-import { initClickToCall } from './click-to-call.js';
-import { initBusinessHours } from './business-hours.js';
-import { initAccessibility } from './accessibility.js';
-import { initAnalytics } from './analytics.js';
-import { initScrollEffects, initParallax } from './animations.js';
-import { initDynamicStyles } from './styles.js';
+
+// Core functionality
+import { initBusinessHours } from './core/business-hours.js';
+
+// UI components
+import { initAccessibility } from './ui/accessibility.js';
+import { initScrollEffects, initParallax } from './ui/animations.js';
+import { initDynamicStyles } from './ui/styles.js';
+
+// Features
+import { initClickToCall } from './features/click-to-call.js';
+import { initAnalytics } from './features/analytics.js';
+
+// Content management
 import { initSEO } from './content/seo-manager.js';
 import { initContentManager } from './content/content-manager.js';
 import { initTestimonials } from './content/testimonials-manager.js';
