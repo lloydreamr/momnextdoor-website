@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - MomNextDoor</title>
+    <meta name="description" content="Schedule a consultation with Domina for special needs caregiving services in Edmonton">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/site-optimized.css">
+    <link rel="stylesheet" href="../css/booking-optimized.css">
+</head>
+<body>
+    <!-- Optimized Header - Consistent with homepage -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="../index-optimized.html">
+                <img src="../images/logo-simple-white.svg" alt="MomNextDoor Special Needs Care" class="logo">
+            </a>
+            <div class="header-cta">
+                <span style="color: var(--primary); font-weight: 600; font-size: 14px;">Booking</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="booking-main">
+        <div class="container">
+            <!-- Progress Indicator - Simplified -->
+            <div class="booking-progress">
+                <div class="progress-step active" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Type</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Time</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Details</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-label">Confirm</div>
+                </div>
+            </div>
+
+            <div class="booking-container">
+                <!-- Assistant hidden on mobile, optional on desktop -->
+                <div class="booking-assistant">
+                    <div class="assistant-header">
+                        <h3>Booking Assistant</h3>
+                        <span class="assistant-status">Online</span>
+                    </div>
+                    <div class="assistant-messages" id="assistantMessages">
+                        <div class="message bot">
+                            <div class="message-content">
+                                Hi! I'm here to help you schedule time with Domina. Let's find the perfect time for your consultation.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assistant-quick-actions" id="quickActions">
+                        <button class="quick-action" data-action="tomorrow">Tomorrow</button>
+                        <button class="quick-action" data-action="next-week">Next Week</button>
+                        <button class="quick-action" data-action="urgent">Urgent</button>
+                    </div>
+                    <div class="assistant-input">
+                        <input type="text" id="assistantInput" placeholder="Type your preference...">
+                        <button id="assistantSend">Send</button>
+                    </div>
+                </div>
+
+                <!-- Main Booking Flow -->
+                <div class="booking-flow">
+                    <!-- Step 1: Meeting Type -->
+                    <div class="booking-step active" id="step1">
+                        <h2>What type of meeting would you like?</h2>
+                        <p class="step-description">Choose the consultation type that best fits your needs</p>
+
+                        <div class="meeting-types">
+                            <div class="meeting-type-card" data-type="consultation">
+                                <h3>Initial Consultation</h3>
+                                <p>30 minutes</p>
+                                <p class="card-description">Get to know our services and discuss your family's needs</p>
+                                <button class="select-type">Select</button>
+                            </div>
+
+                            <div class="meeting-type-card" data-type="follow-up">
+                                <h3>Follow-up Meeting</h3>
+                                <p>15 minutes</p>
+                                <p class="card-description">Quick check-in or questions about ongoing care</p>
+                                <button class="select-type">Select</button>
+                            </div>
+
+                            <div class="meeting-type-card" data-type="detailed">
+                                <h3>Detailed Planning</h3>
+                                <p>60 minutes</p>
+                                <p class="card-description">Comprehensive care planning and strategy session</p>
+                                <button class="select-type">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Time Selection -->
+                    <div class="booking-step" id="step2">
+                        <h2>Select Your Preferred Time</h2>
+                        <p class="step-description">All times shown in your timezone</p>
+
+                        <div class="time-selection">
+                            <div class="calendar-section">
+                                <div class="date-picker">
+                                    <div class="month-navigation">
+                                        <button id="prevMonth">&lt;</button>
+                                        <span id="currentMonth">January 2025</span>
+                                        <button id="nextMonth">&gt;</button>
+                                    </div>
+                                    <div class="calendar-grid" id="calendarGrid">
+                                        <!-- Calendar will be generated by JS -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="time-slots-section">
+                                <h3>Available Times</h3>
+                                <div class="timezone-notice">
+                                    <span id="userTimezone">Mountain Time (MT)</span>
+                                </div>
+
+                                <div class="suggested-slots">
+                                    <h4>Recommended Times</h4>
+                                    <div id="suggestedSlots" class="slots-grid">
+                                        <!-- Will be populated by JS -->
+                                    </div>
+                                </div>
+
+                                <div class="all-slots">
+                                    <h4>All Available Times</h4>
+                                    <div id="allSlots" class="slots-grid">
+                                        <!-- Will be populated by JS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-navigation">
+                            <button class="btn-back" onclick="previousStep()">Back</button>
+                            <button class="btn-next" id="continueToDetails" disabled>Continue</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Contact Details -->
+                    <div class="booking-step" id="step3">
+                        <h2>Tell Us About Yourself</h2>
+                        <p class="step-description">This helps Domina prepare for your meeting</p>
+
+                        <form id="bookingDetailsForm">
+                            <div class="form-section">
+                                <h3>Contact Information</h3>
+
+                                <div class="form-group">
+                                    <label for="userName">Your Name *</label>
+                                    <input type="text" id="userName" name="userName" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="userEmail">Email Address *</label>
+                                    <input type="email" id="userEmail" name="userEmail" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="userPhone">Phone Number (Optional)</label>
+                                    <input type="tel" id="userPhone" name="userPhone">
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Meeting Details</h3>
+
+                                <div class="form-group">
+                                    <label for="childAge">Child's Age (if applicable)</label>
+                                    <input type="text" id="childAge" name="childAge">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="meetingPurpose">What would you like to discuss? *</label>
+                                    <textarea id="meetingPurpose" name="meetingPurpose" rows="4" required
+                                        placeholder="Please share what you'd like to discuss so Domina can prepare for your meeting..."></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="specialNeeds">Any specific needs or accommodations?</label>
+                                    <textarea id="specialNeeds" name="specialNeeds" rows="3"
+                                        placeholder="Let us know if you have any special requirements..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Preferences</h3>
+
+                                <div class="form-group checkbox-group">
+                                    <label>
+                                        <input type="checkbox" id="sendReminders" name="sendReminders" checked>
+                                        <span>Send me appointment reminders</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <label>
+                                        <input type="checkbox" id="addToCalendar" name="addToCalendar" checked>
+                                        <span>Add to my calendar automatically</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="step-navigation">
+                            <button class="btn-back" onclick="previousStep()">Back</button>
+                            <button class="btn-next" id="continueToConfirm">Review Booking</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Confirmation -->
+                    <div class="booking-step" id="step4">
+                        <h2>Confirm Your Appointment</h2>
+                        <p class="step-description">Please review your booking details</p>
+
+                        <div class="confirmation-card">
+                            <div class="confirmation-header">
+                                <h3>Appointment Details</h3>
+                                <span class="confirmation-status pending">Pending Confirmation</span>
+                            </div>
+
+                            <div class="confirmation-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Meeting Type:</span>
+                                    <span class="detail-value" id="confirmType"></span>
+                                </div>
+
+                                <div class="detail-row">
+                                    <span class="detail-label">Date:</span>
+                                    <span class="detail-value" id="confirmDate"></span>
+                                </div>
+
+                                <div class="detail-row">
+                                    <span class="detail-label">Time:</span>
+                                    <span class="detail-value" id="confirmTime"></span>
+                                </div>
+
+                                <div class="detail-row">
+                                    <span class="detail-label">Duration:</span>
+                                    <span class="detail-value" id="confirmDuration"></span>
+                                </div>
+
+                                <div class="detail-row">
+                                    <span class="detail-label">Your Name:</span>
+                                    <span class="detail-value" id="confirmName"></span>
+                                </div>
+
+                                <div class="detail-row">
+                                    <span class="detail-label">Email:</span>
+                                    <span class="detail-value" id="confirmEmail"></span>
+                                </div>
+
+                                <div class="detail-row full-width">
+                                    <span class="detail-label">Meeting Purpose:</span>
+                                    <p class="detail-value" id="confirmPurpose"></p>
+                                </div>
+                            </div>
+
+                            <div class="confirmation-actions">
+                                <button class="btn-back" onclick="previousStep()">Edit Details</button>
+                                <button class="btn-primary" id="confirmBooking">Confirm Booking</button>
+                            </div>
+                        </div>
+
+                        <!-- Success Message (hidden initially) -->
+                        <div class="booking-success" id="bookingSuccess" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h3>Appointment Confirmed!</h3>
+                            <p>Your appointment with Domina has been successfully scheduled.</p>
+                            <p>You'll receive a confirmation email shortly with:</p>
+                            <ul>
+                                <li>Calendar invitation</li>
+                                <li>Meeting details</li>
+                                <li>Preparation tips</li>
+                            </ul>
+                            <div class="success-actions">
+                                <button onclick="window.location.href='../index-optimized.html'" class="btn-secondary">Back to Home</button>
+                                <button onclick="window.location.href='booking-optimized.html'" class="btn-primary">Book Another</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Simplified Footer - Consistent with homepage -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 MomNextDoor. Professional special needs caregiving in Edmonton.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/booking/booking-assistant.js"></script>
+    <script src="../js/booking/booking-calendar.js"></script>
+    <script src="../js/booking/booking-flow.js"></script>
+    <script src="../js/booking/booking-api.js"></script>
+    <script src="../js/booking/booking-main.js"></script>
+
+    <!-- Header scroll effect -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
