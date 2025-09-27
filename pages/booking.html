@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css?v=2024-ui-fixes-final">
     <link rel="stylesheet" href="../css/icons.css">
-    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="stylesheet" href="../css/booking-optimized.css">
 </head>
 <body>
     <header class="header">
@@ -29,26 +29,26 @@
 
     <main class="booking-main">
         <div class="container">
-            <!-- Progress Indicator -->
+            <!-- Progress Indicator - Simplified -->
             <div class="booking-progress">
                 <div class="progress-step active" data-step="1">
                     <div class="step-number">1</div>
-                    <div class="step-label">Meeting Type</div>
+                    <div class="step-label">Type</div>
                 </div>
                 <div class="progress-line"></div>
                 <div class="progress-step" data-step="2">
                     <div class="step-number">2</div>
-                    <div class="step-label">Select Time</div>
+                    <div class="step-label">Time</div>
                 </div>
                 <div class="progress-line"></div>
                 <div class="progress-step" data-step="3">
                     <div class="step-number">3</div>
-                    <div class="step-label">Your Details</div>
+                    <div class="step-label">Details</div>
                 </div>
                 <div class="progress-line"></div>
                 <div class="progress-step" data-step="4">
                     <div class="step-number">4</div>
-                    <div class="step-label">Confirmation</div>
+                    <div class="step-label">Confirm</div>
                 </div>
             </div>
 
@@ -86,7 +86,6 @@
 
                         <div class="meeting-types">
                             <div class="meeting-type-card" data-type="consultation">
-                                <div class="card-icon">🗣️</div>
                                 <h3>Initial Consultation</h3>
                                 <p>30 minutes</p>
                                 <p class="card-description">Get to know our services and discuss your family's needs</p>
@@ -94,7 +93,6 @@
                             </div>
 
                             <div class="meeting-type-card" data-type="follow-up">
-                                <div class="card-icon">📋</div>
                                 <h3>Follow-up Meeting</h3>
                                 <p>15 minutes</p>
                                 <p class="card-description">Quick check-in or questions about ongoing care</p>
@@ -102,7 +100,6 @@
                             </div>
 
                             <div class="meeting-type-card" data-type="detailed">
-                                <div class="card-icon">📊</div>
                                 <h3>Detailed Planning</h3>
                                 <p>60 minutes</p>
                                 <p class="card-description">Comprehensive care planning and strategy session</p>
@@ -137,7 +134,7 @@
                                 </div>
 
                                 <div class="suggested-slots">
-                                    <h4>🎯 Recommended Times</h4>
+                                    <h4>Recommended Times</h4>
                                     <div id="suggestedSlots" class="slots-grid">
                                         <!-- Will be populated by JS -->
                                     </div>
@@ -285,7 +282,7 @@
 
                         <!-- Success Message (hidden initially) -->
                         <div class="booking-success" id="bookingSuccess" style="display: none;">
-                            <div class="success-icon">✅</div>
+                            <div class="success-icon">✓</div>
                             <h3>Appointment Confirmed!</h3>
                             <p>Your appointment with Domina has been successfully scheduled.</p>
                             <p>You'll receive a confirmation email shortly with:</p>
